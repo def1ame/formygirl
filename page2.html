@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню</title>
+    <link rel="stylesheet" href="./styles_page2.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Любимая ❤️ &#128157; </strong>
+                        <p>
+                            На самом деле
+                        <p> Рядом с тобой , я ощущаю тепло и любовь , порой веду себя как ребенок и мне очень спокойно.
+                            Моя любовь к тебе выражается очень разными взглядами, и очень хочу что бы ты могла это замечать❤️
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="sweetheart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+
+        // Function to toggle the class 'flap' when the envelope is clicked
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+
+        // Function to change the page after 10 seconds
+        setTimeout(() => {
+            window.location.href = 'page3.html'; // Replace 'newPage.html' with the URL of the desired page
+        }, 15000); // 10000 milliseconds = 10 seconds
+
+    </script>
+</body>
+
+</html>
